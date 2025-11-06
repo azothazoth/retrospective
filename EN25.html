@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>講臺側影——致淳恩的廿五幀</title>
+    <style>
+        /* 基礎樣式與動畫 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Noto Serif TC', serif;
+            background: linear-gradient(to bottom, #fef8f5, #e8f4f8);
+            color: #333;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            padding: 3rem 2rem;
+            position: relative;
+        }
+
+        /* 標題樣式 */
+        .title {
+            text-align: center;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding-bottom: 1.5rem;
+        }
+
+        .title h1 {
+            font-weight: 600;
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            letter-spacing: 2px;
+        }
+
+        .title .subtitle {
+            font-weight: 300;
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            letter-spacing: 4px;
+        }
+
+        /* 詩文主體樣式 */
+        .poem-content {
+            line-height: 2.2;
+            font-size: 1.3rem;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .poem-content p {
+            margin: 1.8rem 0;
+            opacity: 0;
+            animation: fadeUp 1.2s ease forwards;
+        }
+
+        /* 漸入動畫 */
+        @keyframes fadeUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* 裝飾元素 - 櫻花 */
+        .sakura {
+            position: absolute;
+            background-color: #ffb7c5;
+            opacity: 0.7;
+            border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+        }
+
+        /* 響應式設計 */
+        @media (max-width: 768px) {
+            .poem-content {
+                font-size: 1.1rem;
+                line-height: 2;
+            }
+            
+            .title h1 {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* 特別強調名字的樣式 */
+        .name-emphasis {
+            color: #c45a66;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(196, 90, 102, 0.2);
+        }
+
+        /* 結尾簽名 */
+        .signature {
+            text-align: right;
+            margin-top: 3rem;
+            font-style: italic;
+            color: #7f8c8d;
+            opacity: 0;
+            animation: fadeUp 1.2s ease 6s forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 標題區 -->
+        <div class="title">
+            <h1>講臺側影</h1>
+            <div class="subtitle">致淳恩的廿五幀</div>
+        </div>
+
+        <!-- 詩文內容 -->
+        <div class="poem-content">
+            <p style="animation-delay: 0.2s">粉筆灰是未降落的雪</p>
+            <p style="animation-delay: 0.6s">靜懸於《桃花源》的隘口</p>
+            <p style="animation-delay: 1.0s">你指引少年</p>
+            <p style="animation-delay: 1.4s">以《康橋》的雲彩為舟</p>
+            <p style="animation-delay: 1.8s">在論語的川流上</p>
+            <p style="animation-delay: 2.2s">尋一道光的入口</p>
+            
+            <br>
+            
+            <p style="animation-delay: 2.6s">廿五度春風</p>
+            <p style="animation-delay: 2.8s">穿過你命名的深井</p>
+            <p style="animation-delay: 3.2s"><span class="name-emphasis">淳</span>澈，是狐狸告訴</p>
+            <p style="animation-delay: 3.6s">小王子的那個祕密</p>
+            <p style="animation-delay: 4.0s"><span class="name-emphasis">恩</span>養，是韓愈先生</p>
+            <p style="animation-delay: 4.4s">遺落於《師說》外的</p>
+            <p style="animation-delay: 4.8s">一粒溫柔</p>
+            
+            <br>
+            
+            <p style="animation-delay: 5.2s">你持續抽芽</p>
+            <p style="animation-delay: 5.4s">像一株被典故</p>
+            <p style="animation-delay: 5.6s">縱容的梧桐</p>
+            <p style="animation-delay: 5.8s">當青春在《孔乙己》的哄笑中</p>
+            <p style="animation-delay: 6.2s">突然靜音</p>
+            <p style="animation-delay: 6.6s">你體內蓄積的晴空</p>
+            <p style="animation-delay: 7.0s">自會接住</p>
+            <p style="animation-delay: 7.4s">所有下墜的羽毛</p>
+            
+            <br>
+            
+            <p style="animation-delay: 7.8s">此刻時針變得柔軟</p>
+            <p style="animation-delay: 8.2s">墨痕綻放的弧度</p>
+            <p style="animation-delay: 8.6s">正好拓印了</p>
+            <p style="animation-delay: 9.0s">你回眸時</p>
+            <p style="animation-delay: 9.4s">那道銀河般的</p>
+            <p style="animation-delay: 9.8s"><em>師說</em></p>
+        </div>
+
+        <!-- 結尾簽名 -->
+        <div class="signature">
+            <p>獻給二十五歲的淳恩</p>
+        </div>
+    </div>
+
+    <script>
+        // 櫻花飄落效果
+        function createSakura() {
+            const container = document.querySelector('.container');
+            const sakura = document.createElement('div');
+            sakura.classList.add('sakura');
+            
+            // 隨機大小
+            const size = Math.random() * 12 + 8;
+            sakura.style.width = `${size}px`;
+            sakura.style.height = `${size}px`;
+            
+            // 隨機起始位置
+            sakura.style.left = `${Math.random() * 100}%`;
+            sakura.style.top = `-20px`;
+            
+            // 隨機動畫
+            const animationDuration = Math.random() * 10 + 10;
+            sakura.style.animation = `fall ${animationDuration}s linear forwards`;
+            
+            // 自定義落葉動畫
+            const style = document.createElement('style');
+            if (!document.querySelector('#sakura-animation')) {
+                style.id = 'sakura-animation';
+                style.textContent = `
+                    @keyframes fall {
+                        to {
+                            transform: translateY(100vh) rotate(360deg);
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+            
+            container.appendChild(sakura);
+            
+            // 動畫結束後移除元素
+            setTimeout(() => {
+                sakura.remove();
+            }, animationDuration * 1000);
+        }
+        
+        // 定期生成櫻花
+        setInterval(createSakura, 500);
+    </script>
+</body>
+</html>
